@@ -493,11 +493,23 @@ a.button{
 	color: #1F1442;
 }
 .section-reviews .box .info img{
-	width: 300px;
+	width: 250px;
+	margin: 0 auto;
+	display: block;
 }
 .section-reviews .box .img img{
 	width: 100%;
 	max-width: 500px;
+}
+@media screen and (max-width:600px){
+	.section-reviews .box{
+		flex-direction: column;
+		gap: 30px;
+	}	
+	.section-reviews .box .info  h2{
+		width: 100%;
+		text-align: center;
+	}
 }
 /*=====================================================================================*/
 .section-guarantee{
